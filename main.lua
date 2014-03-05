@@ -11,7 +11,7 @@ myMoon.x=350
 local inText=display.newText(myTime,350,100,"Comic Sans MS",30)	
 local hint=display.newText("Shake to destroy buidlings",590,20,"Comic Sans MS",20)
 	inText: setFillColor( 153/255,12/255,232/255 )
-	hint:  setFillColor( 153/255,12/255,232/255 )
+	hint:  setFillColor( 1,1,1 )
 local physics  = require ("physics")
 physics.start()
 function setWindow(buiX, buiY,buiWidth,buiHeight,rn,fn,d,color,v)
@@ -21,7 +21,7 @@ function setWindow(buiX, buiY,buiWidth,buiHeight,rn,fn,d,color,v)
     local time=d
 	local buildingX=buiX
 	local buildingY=buiY
-	local buildingLayers= display.newGroup( )
+	local buildingLayers= display.newGroup( )  ---important
     local buildingWidth=buiWidth
     local buildingHeight=buiHeight 
     local floorNumber=fn
